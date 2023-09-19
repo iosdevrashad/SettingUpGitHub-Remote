@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ChangingThisJunt: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("How Are Ya Doin?")
+        
+        ZStack {
+            Color.green.ignoresSafeArea(.all)
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("How Are Ya Doin?")
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
